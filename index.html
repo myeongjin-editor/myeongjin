@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Myeongjin Gwak | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 60px auto;
-      max-width: 700px;
-      line-height: 1.6;
-    }
-    h1 { font-size: 2em; }
-    .project { margin-bottom: 40px; }
-    img { width: 100%; border-radius: 8px; margin-top: 10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myeongjin Gwak | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
   <h1>Myeongjin Gwak</h1>
-  <p>Welcome to my portfolio.</p>
+  <nav>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-  <div class="project">
-    <h2>Project 1</h2>
-    <p>Description of project 1.</p>
-    <img src="https://via.placeholder.com/600x400" alt="Project 1 image">
-    <img src="https://via.placeholder.com/600x400" alt="Project 1 image 2">
-  </div>
+<main>
+  <section class="projects">
+    <a class="project-card" href="project1.html">
+      <img src="https://via.placeholder.com/400x300" alt="Project 1">
+      <h2>Project 1</h2>
+      <p>Essay design project</p>
+    </a>
 
-  <div class="project">
-    <h2>Project 2</h2>
-    <p>Description of project 2.</p>
-    <img src="https://via.placeholder.com/600x400" alt="Project 2 image">
-    <img src="https://via.placeholder.com/600x400" alt="Project 2 image 2">
-  </div>
+    <a class="project-card" href="project2.html">
+      <img src="https://via.placeholder.com/400x300" alt="Project 2">
+      <h2>Project 2</h2>
+      <p>Visual storytelling</p>
+    </a>
+  </section>
+</main>
+
+<footer>
+  © 2025 Myeongjin Gwak
+</footer>
 </body>
 </html>
