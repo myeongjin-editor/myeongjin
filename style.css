@@ -27,6 +27,7 @@ header {
   justify-content: center; /* 중앙 정렬 */
   align-items: center;
   gap: 50px;               /* 제목과 메뉴 사이 간격 */
+  flex-wrap: nowrap;        /* 강제 줄바꿈 방지 */
 }
 
 /* 타이틀 */
