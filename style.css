@@ -22,14 +22,13 @@ header {
   padding: 10px 20px;
 }
 
-/* 헤더 컨테이너: 타이틀 왼쪽, 메뉴 오른쪽 */
 .header-container {
   display: flex;
-  justify-content: space-between; /* 양끝 정렬 */
+  justify-content: space-between; /* 타이틀 왼쪽, 메뉴 오른쪽 */
   align-items: center;
-  max-width: 1000px; /* 중앙 영역 폭 제한 */
-  margin: 0 auto;     /* 화면 가운데 정렬 */
-  gap: 20px;          /* 타이틀과 메뉴 사이 간격 */
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 /* 타이틀 */
@@ -40,12 +39,12 @@ header h1 {
 
 header h1 a {
   text-decoration: none;
-  color: inherit; /* 기본 색 유지 */
+  color: inherit;
 }
 
 header h1 a:hover {
   text-decoration: none;
-  color: inherit; /* hover 시 색 변화 없음 */
+  color: inherit;
 }
 
 /* 메뉴 */
@@ -137,35 +136,72 @@ footer {
 }
 
 /* =========================
-   반응형
+   반응형 헤더
 ========================= */
 @media (max-width: 800px) {
-  .card-grid, .projects {
+  .header-container {
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
   }
-  .card-grid img, .project-card img {
-    width: 45vw;
+
+  header nav {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  header nav a {
+    font-size: 0.95em;
+    padding: 6px;
   }
 }
 
 @media (max-width: 600px) {
   .header-container {
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
     text-align: center;
+    gap: 8px;
+  }
+
+  header nav {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  header nav a {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  header nav a {
+    font-size: 0.85em;
+    padding: 4px;
+  }
+}
+
+/* =========================
+   반응형 카드/프로젝트
+========================= */
+@media (max-width: 800px) {
+  .card-grid img, .project-card img {
+    width: 45vw; /* 한 줄에 2개 정도 */
   }
 }
 
 @media (max-width: 500px) {
   main {
-    padding: 120px 10px 20px 10px; /* 모바일에서 header 높이 맞춤 */
+    padding: 120px 10px 20px 10px;
   }
+
   section h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
   }
+
   .card-grid img, .project-card img {
-    width: 90vw;
+    width: 90vw; /* 한 줄에 1개 */
   }
 }
