@@ -16,17 +16,26 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
     }
     header h1 {
       margin: 0;
-      font-size: 1.5em;
-      font-weight: bold;
+      font-size: 1.8em;
+      /* 제목과 메뉴 사이 간격 줄이기 위해 margin 조정 가능 */
+    }
+    nav {
+      display: flex;
+      gap: 24px; /* 메뉴 항목들 간 간격 */
     }
     nav a {
-      margin-left: 20px;
       text-decoration: none;
       color: #333;
+      font-size: 1em;
+      padding: 8px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       max-width: 1000px;
@@ -36,17 +45,16 @@
     section {
       margin-bottom: 60px;
     }
-    h2 {
-      font-size: 1.2em;
+    section h2 {
+      font-size: 1.4em;
+      margin-bottom: 20px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 8px;
-      margin-bottom: 20px;
     }
     .card-grid {
       display: flex;
-      gap: 20px;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      gap: 20px;
     }
     .card-grid a {
       text-decoration: none;
@@ -62,11 +70,11 @@
       padding: 20px;
       border-top: 1px solid #eee;
       margin-top: 60px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>myeongjin</h1>
     <nav>
@@ -77,36 +85,33 @@
   </header>
 
   <main>
-    <!-- Edited recent works -->
-    <section>
+    <section id="edited">
       <h2>edited</h2>
       <div class="card-grid">
-        <a href="edited/017_Physics.html">
-          <img src="images/017_Physics_cover.png" alt="어린이를 위한 모든 순간의 물리학">
+        <a href="edited/017.Physics.html">
+          <img src="images/Physics_cover.png" alt="Physics cover">
         </a>
-        <a href="edited/016_NJ.html">
-          <img src="images/016_NJ_cover.jpg" alt="내전, 대중 혐오, 법치">
+        <a href="edited/016.NJ.html">
+          <img src="images/NJ_cover.jpg" alt="NJ cover">
         </a>
-        <a href="edited/015_Alle_Zeit.html">
-          <img src="images/015_Alle_Zeit_cover.jpg" alt="시간을 잃어버린 사람들">
+        <a href="edited/015.Alle_Zeit.html">
+          <img src="images/Alle_Zeit_cover.jpg" alt="Alle Zeit cover">
         </a>
       </div>
     </section>
 
-    <!-- Writings preview -->
-    <section>
+    <section id="writings">
       <h2>writings</h2>
       <div class="card-grid">
-        <div style="width:200px; text-align:center; color:#888;">Coming soon</div>
-        <div style="width:200px; text-align:center; color:#888;">Coming soon</div>
-        <div style="width:200px; text-align:center; color:#888;">Coming soon</div>
+        <div style="width:200px; text-align:center; color:#aaa;">coming soon</div>
+        <div style="width:200px; text-align:center; color:#aaa;">coming soon</div>
+        <div style="width:200px; text-align:center; color:#aaa;">coming soon</div>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Myeongjin Gwak
+    © 2025 myeongjin
   </footer>
-
 </body>
 </html>
