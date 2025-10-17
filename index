@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myeongjin Gwak | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-size: 1.2em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .card-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .card-grid a {
+      text-decoration: none;
+      color: #000;
+    }
+    .card-grid img {
+      width: 200px;
+      height: auto;
+      border: 1px solid #eee;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #eee;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>myeongjin</h1>
+    <nav>
+      <a href="about/index.html">about</a>
+      <a href="edited/index.html">edited</a>
+      <a href="writings/index.html">writings</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Edited recent works -->
+    <section>
+      <h2>edited</h2>
+      <div class="card-grid">
+        <a href="edited/017.Physics.html">
+          <img src="images/Physics_cover.png" alt="어린이를 위한 모든 순간의 물리학">
+        </a>
+        <a href="edited/016.NJ.html">
+          <img src="images/NJ_cover.jpg" alt="내전, 대중 혐오, 법치">
+        </a>
+        <a href="edited/015.Alle_Zeit.html">
+          <img src="images/Alle_Zeit_cover.jpg" alt="시간을 잃어버린 사람들">
+        </a>
+      </div>
+    </section>
+
+    <!-- Writings preview -->
+    <section>
+      <h2>writings</h2>
+      <div class="card-grid">
+        <div style="width:200px; text-align:center; color:#888;">Coming soon</div>
+        <div style="width:200px; text-align:center; color:#888;">Coming soon</div>
+        <div style="width:200px; text-align:center; color:#888;">Coming soon</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Myeongjin Gwak
+  </footer>
+
+</body>
+</html>
