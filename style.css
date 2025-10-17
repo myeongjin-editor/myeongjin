@@ -9,7 +9,7 @@ body {
 }
 
 /* =========================
-   헤더 (고정)
+   헤더 (고정 + 중앙 정렬)
 ========================= */
 header {
   position: fixed;       /* 스크롤 시 고정 */
@@ -17,12 +17,16 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 1px solid #eee;
   background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center;
+  gap: 50px;               /* 제목과 메뉴 사이 간격 */
 }
 
 /* 타이틀 */
@@ -42,7 +46,7 @@ header h1 a:hover {
   color: inherit;        /* hover 시 색상 변화 없음 */
 }
 
-/* 내비게이션 */
+/* 메뉴 */
 nav {
   display: flex;
   gap: 10px;
@@ -65,7 +69,7 @@ nav a:hover {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 80px 20px 20px 20px; /* 상단 padding = header 높이 */
+  padding: 100px 20px 20px 20px; /* 상단 padding = header 높이 */
 }
 
 /* 섹션 */
@@ -85,6 +89,7 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .card-grid a {
@@ -142,9 +147,17 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column; /* 제목 아래로 메뉴 */
+    gap: 10px;              /* 세로 간격 */
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
   main {
-    padding: 100px 10px 20px 10px; /* 모바일에서 header 높이 맞춤 */
+    padding: 120px 10px 20px 10px; /* 모바일에서 header 높이 맞춤 */
   }
   section h2 {
     font-size: 1.2em;
