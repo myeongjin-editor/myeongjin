@@ -24,12 +24,21 @@ header {
 
 .header-container {
   display: flex;
-  justify-content: space-between; /* 타이틀 왼쪽, 메뉴 오른쪽 */
+  flex-wrap: nowrap;       /* 줄 바꿈 방지 */
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: flex-start; /* 좌우 정렬 */
   gap: 20px;
-  overflow-x: auto; /* 가로 넘침 시 스크롤 가능 */
+  max-width: 100%;         /* 화면 너비 제한 */
+  overflow-x: auto;        /* 가로 넘침 시 스크롤 */
+  -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
+}
+
+.header-container::-webkit-scrollbar {
+  display: none; /* 스크롤바 숨김 */
+}
+
+header nav a {
+  white-space: nowrap;     /* 메뉴 글자 줄바꿈 방지 */
 }
 
 /* 타이틀 */
