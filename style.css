@@ -12,7 +12,7 @@ body {
    헤더 (고정)
 ========================= */
 header {
-  position: fixed;
+  position: fixed;       /* 스크롤 시 고정 */
   top: 0;
   left: 0;
   width: 100%;
@@ -25,18 +25,21 @@ header {
   background-color: #fff;
 }
 
+/* 타이틀 */
 header h1 {
   margin: 0;
   font-size: 1.8em;
 }
 
 header h1 a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit;        /* 색상 그대로 */
+  cursor: pointer;
 }
 
 header h1 a:hover {
-  text-decoration: underline;
+  text-decoration: none; /* hover 시 밑줄 없음 */
+  color: inherit;        /* hover 시 색상 변화 없음 */
 }
 
 /* 내비게이션 */
@@ -62,7 +65,7 @@ nav a:hover {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 80px 20px 20px 20px; /* top padding = header 높이 */
+  padding: 80px 20px 20px 20px; /* 상단 padding = header 높이 */
 }
 
 /* 섹션 */
