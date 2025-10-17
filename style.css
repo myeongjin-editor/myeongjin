@@ -9,7 +9,7 @@ body {
 }
 
 /* =========================
-   헤더 (고정 + 중앙 정렬)
+   헤더 (고정 + 양끝 정렬)
 ========================= */
 header {
   position: fixed;       /* 스크롤 시 고정 */
@@ -22,12 +22,14 @@ header {
   padding: 10px 20px;
 }
 
+/* 헤더 컨테이너: 타이틀 왼쪽, 메뉴 오른쪽 */
 .header-container {
   display: flex;
-  justify-content: center; /* 중앙 정렬 */
+  justify-content: space-between; /* 양끝 정렬 */
   align-items: center;
-  gap: 50px;               /* 제목과 메뉴 사이 간격 */
-  flex-wrap: nowrap;        /* 강제 줄바꿈 방지 */
+  max-width: 1000px; /* 중앙 영역 폭 제한 */
+  margin: 0 auto;     /* 화면 가운데 정렬 */
+  gap: 20px;          /* 타이틀과 메뉴 사이 간격 */
 }
 
 /* 타이틀 */
@@ -37,30 +39,29 @@ header h1 {
 }
 
 header h1 a {
-  text-decoration: none; /* 밑줄 제거 */
-  color: inherit;        /* 색상 그대로 */
-  cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* 기본 색 유지 */
 }
 
 header h1 a:hover {
-  text-decoration: none; /* hover 시 밑줄 없음 */
-  color: inherit;        /* hover 시 색상 변화 없음 */
+  text-decoration: none;
+  color: inherit; /* hover 시 색 변화 없음 */
 }
 
 /* 메뉴 */
-nav {
+header nav {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
-nav a {
+header nav a {
   text-decoration: none;
   color: #333;
   font-size: 1em;
   padding: 8px;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
@@ -151,7 +152,8 @@ footer {
 @media (max-width: 600px) {
   .header-container {
     flex-direction: column; /* 제목 아래로 메뉴 */
-    gap: 10px;              /* 세로 간격 */
+    align-items: center;
+    gap: 10px;
     text-align: center;
   }
 }
