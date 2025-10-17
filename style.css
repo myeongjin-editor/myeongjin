@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* =========================
@@ -24,27 +25,18 @@ header {
 
 .header-container {
   display: flex;
-  flex-wrap: nowrap;       /* 줄 바꿈 방지 */
+  justify-content: space-between; /* 좌우 정렬 */
   align-items: center;
-  justify-content: flex-start; /* 좌우 정렬 */
+  max-width: 1000px;
+  margin: 0 auto;
   gap: 20px;
-  max-width: 100%;         /* 화면 너비 제한 */
-  overflow-x: auto;        /* 가로 넘침 시 스크롤 */
-  -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
-}
-
-.header-container::-webkit-scrollbar {
-  display: none; /* 스크롤바 숨김 */
-}
-
-header nav a {
-  white-space: nowrap;     /* 메뉴 글자 줄바꿈 방지 */
 }
 
 /* 타이틀 */
 header h1 {
   margin: 0;
   font-size: 1.8em;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
 
 header h1 a {
@@ -61,6 +53,7 @@ header h1 a:hover {
 header nav {
   display: flex;
   gap: 15px;
+  flex-wrap: nowrap; /* 한 줄 유지 */
 }
 
 header nav a {
@@ -68,6 +61,7 @@ header nav a {
   color: #333;
   font-size: 1em;
   padding: 8px;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
 
 header nav a:hover {
@@ -130,7 +124,7 @@ section h2 {
   display: block;
 }
 
-/* 홈 버튼 (edited 페이지 하단) */
+/* 홈 버튼 */
 nav.home-button {
   text-align: center;
   margin: 60px 0 40px 0;
@@ -146,68 +140,27 @@ footer {
 }
 
 /* =========================
-   프로젝트 제목/부제/저자
+   반응형 헤더 (모바일 600px 이하)
 ========================= */
-.project-title {
-  text-align: center;
-  font-size: 1.8em;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.project-subtitle {
-  text-align: center;
-  font-size: 1.2em;
-  margin: 8px 0 15px 0;
-  line-height: 1.3;
-}
-
-.project-authors {
-  text-align: center;
-  font-size: 0.95em;
-  margin: 0 0 30px 0;
-  line-height: 1.4;
-  color: #555;
-  font-weight: bold; /* 굵은 글씨 적용 */
-}
-
-/* =========================
-   반응형 헤더
-========================= */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .header-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: row;        /* 가로 한 줄 유지 */
+    flex-wrap: nowrap;          /* 줄바꿈 방지 */
+    justify-content: space-between; /* 좌우 정렬 */
+    align-items: center;
+    gap: 8px;
+    padding: 0 5px;
   }
 
-  header nav {
-    gap: 10px;
-    justify-content: center;
+  header h1 {
+    font-size: 1.5em;           /* 글자 크기 조정 */
+    overflow: hidden;
+    text-overflow: ellipsis;    /* 잘리는 글자 생략 */
   }
 
   header nav a {
-    font-size: 0.95em;
-    padding: 6px;
-  }
-}
-
-/* =========================
-   모바일(600px 이하) 헤더 간격 조정
-========================= */
-@media (max-width: 400px) {
-  .header-container {
-    justify-content: space-between; /* 좌우 정렬 유지 */
-    gap: 5px;                        /* 타이틀과 메뉴 간격 줄이기 */
-  }
-
-  header nav {
-    gap: 4px;                        /* 메뉴 아이템 간격 줄이기 */
-  }
-
-  header nav a {
-    font-size: 0.85em;               /* 글자 크기 줄이기 */
-    padding: 4px;                     /* 패딩 줄이기 */
+    font-size: 0.85em;
+    padding: 4px 6px;
   }
 }
 
