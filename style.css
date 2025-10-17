@@ -195,7 +195,7 @@ footer {
 /* =========================
    모바일(600px 이하) 헤더 간격 조정
 ========================= */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .header-container {
     justify-content: space-between; /* 좌우 정렬 유지 */
     gap: 5px;                        /* 타이틀과 메뉴 간격 줄이기 */
@@ -208,33 +208,6 @@ footer {
   header nav a {
     font-size: 0.85em;               /* 글자 크기 줄이기 */
     padding: 4px;                     /* 패딩 줄이기 */
-  }
-}
-
-@media (max-width: 400px) {
-  .header-container {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    overflow-x: auto; /* 메뉴 길면 스크롤 가능 */
-  }
-
-  header nav {
-    display: flex;
-    gap: 4px;
-    flex-shrink: 0;
-  }
-
-  header nav a {
-    font-size: 0.7em;
-    padding: 2px 3px;
-    white-space: nowrap; /* 줄바꿈 방지 */
-  }
-
-  .header-container::-webkit-scrollbar {
-    display: none; /* 스크롤바 숨김 */
   }
 }
 
