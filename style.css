@@ -1,59 +1,150 @@
+/* =========================
+   공통 기본 스타일
+========================= */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #fff;
-  color: #111;
 }
 
+/* =========================
+   헤더
+========================= */
 header {
-  text-align: center;
-  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
 }
 
-header nav a {
-  margin-left: 1rem;
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+/* =========================
+   내비게이션
+========================= */
+nav {
+  display: flex;
+  gap: 10px; /* 메뉴 항목 간 간격 */
+}
+
+nav a {
   text-decoration: none;
-  color: #111;
+  color: #333;
+  font-size: 1em;
+  padding: 8px;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   메인 영역
+========================= */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px; /* 위쪽 패딩 줄여 타이틀과 첫 섹션 간격 조정 */
+}
+
+/* =========================
+   섹션
+========================= */
+section {
+  margin-bottom: 40px; /* 섹션 간격 조정 */
+}
+
+section h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px; /* 제목과 카드 간격 조정 */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* =========================
+   카드 그리드 (index 페이지)
+========================= */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-grid a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card-grid img {
+  width: 280px; /* 이미지 크기 통일 */
+  height: auto;
+  border: 1px solid #eee;
+}
+
+/* =========================
+   프로젝트 페이지 (.projects)
+========================= */
 .projects {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem 1rem;
-}
-
-.project-card {
-  text-align: center;
-  width: 300px;
-  text-decoration: none;
-  color: #111;
+  padding: 0;
 }
 
 .project-card img {
-  width: 200px; /* 원하는 가로 크기 */
-  height: auto; /* 세로 비율 유지 */
-  display: block; /* 이미지 주변 공백 정리 */
-  margin: 0 auto; /* 가운데 정렬 */
+  width: 280px; /* 이미지 크기 통일 */
+  height: auto;
+  border: 1px solid #eee;
+  display: block;
 }
 
+/* =========================
+   홈 버튼 (edited 페이지 하단)
+========================= */
+nav.home-button {
+  text-align: center;
+  margin: 60px 0 40px 0;
+}
+
+/* =========================
+   푸터
+========================= */
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #555;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+  color: #666;
 }
 
-@media(max-width: 600px) {
-  .projects {
-    flex-direction: column;
-    align-items: center;
+/* =========================
+   반응형
+========================= */
+@media (max-width: 800px) {
+  .card-grid, .projects {
+    justify-content: center;
+    gap: 15px;
   }
+  .card-grid img, .project-card img {
+    width: 45vw; /* 화면 폭에 따라 이미지 크기 자동 조정 */
+  }
+}
 
-  .project-card {
-    width: 90%;
+@media (max-width: 500px) {
+  main {
+    padding: 15px 10px;
+  }
+  section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .card-grid img, .project-card img {
+    width: 90vw;
   }
 }
