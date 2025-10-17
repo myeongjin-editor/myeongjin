@@ -151,7 +151,6 @@ footer {
 
 @media (max-width: 600px) {
   .header-container {
-    flex-direction: column; /* 제목 아래로 메뉴 */
     align-items: center;
     gap: 10px;
     text-align: center;
