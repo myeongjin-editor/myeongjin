@@ -1,5 +1,5 @@
 /* =========================
-   공통 기본 스타일
+   기본 스타일
 ========================= */
 body {
   font-family: Arial, sans-serif;
@@ -9,14 +9,20 @@ body {
 }
 
 /* =========================
-   헤더
+   헤더 (고정)
 ========================= */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 
 header h1 {
@@ -24,12 +30,19 @@ header h1 {
   font-size: 1.8em;
 }
 
-/* =========================
-   내비게이션
-========================= */
+header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+header h1 a:hover {
+  text-decoration: underline;
+}
+
+/* 내비게이션 */
 nav {
   display: flex;
-  gap: 10px; /* 메뉴 항목 간 간격 */
+  gap: 10px;
 }
 
 nav a {
@@ -49,26 +62,22 @@ nav a:hover {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 20px; /* 위쪽 패딩 줄여 타이틀과 첫 섹션 간격 조정 */
+  padding: 80px 20px 20px 20px; /* top padding = header 높이 */
 }
 
-/* =========================
-   섹션
-========================= */
+/* 섹션 */
 section {
-  margin-bottom: 40px; /* 섹션 간격 조정 */
+  margin-bottom: 40px;
 }
 
 section h2 {
   font-size: 1.4em;
-  margin-bottom: 15px; /* 제목과 카드 간격 조정 */
+  margin-bottom: 15px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 6px;
 }
 
-/* =========================
-   카드 그리드 (index 페이지)
-========================= */
+/* 카드 그리드 (index 페이지) */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -81,14 +90,12 @@ section h2 {
 }
 
 .card-grid img {
-  width: 280px; /* 이미지 크기 통일 */
+  width: 280px;
   height: auto;
   border: 1px solid #eee;
 }
 
-/* =========================
-   프로젝트 페이지 (.projects)
-========================= */
+/* 프로젝트 페이지 (.projects) */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -98,23 +105,19 @@ section h2 {
 }
 
 .project-card img {
-  width: 280px; /* 이미지 크기 통일 */
+  width: 280px;
   height: auto;
   border: 1px solid #eee;
   display: block;
 }
 
-/* =========================
-   홈 버튼 (edited 페이지 하단)
-========================= */
+/* 홈 버튼 (edited 페이지 하단) */
 nav.home-button {
   text-align: center;
   margin: 60px 0 40px 0;
 }
 
-/* =========================
-   푸터
-========================= */
+/* 푸터 */
 footer {
   text-align: center;
   padding: 20px;
@@ -132,13 +135,13 @@ footer {
     gap: 15px;
   }
   .card-grid img, .project-card img {
-    width: 45vw; /* 화면 폭에 따라 이미지 크기 자동 조정 */
+    width: 45vw;
   }
 }
 
 @media (max-width: 500px) {
   main {
-    padding: 15px 10px;
+    padding: 100px 10px 20px 10px; /* 모바일에서 header 높이 맞춤 */
   }
   section h2 {
     font-size: 1.2em;
