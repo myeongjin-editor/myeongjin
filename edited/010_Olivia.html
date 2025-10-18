@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>용감한 고양이 올리비아 | Myeongjin Gwak</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* ===== 프로젝트 페이지 전용 추가 스타일 ===== */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px; /* 상단 padding = header 높이 */
+  }
 
+  /* ===== 제목/부제/저자 정보 ===== */
+  .project-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .project-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 8px 0 15px 0;
+    line-height: 1.3;
+  }
+
+  .project-authors {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+  }
+
+  /* ===== 표지 이미지 ===== */
+  .cover-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .cover-images img {
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* ===== 책 소개 ===== */
+  .book-intro, .book-achievements {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .book-intro p:first-child {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* ===== 성과 리스트 ===== */
+  .book-achievements ul {
+    padding-left: 20px;
+  }
+
+  .book-achievements li {
+    margin-bottom: 10px;
+  }
+
+  a.article-link {
+    text-decoration: underline;
+    color: #333;
+  }
+
+  a.article-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== 홈 버튼 ===== */
+  nav.home-button {
+    text-align: center;
+    margin: 80px 0 40px 0;
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 800px) {
+    .cover-images img {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main {
+      padding: 120px 10px 20px 10px;
+    }
+    .project-subtitle {
+      font-size: 1em;
+    }
+    .project-authors {
+      font-size: 0.85em;
+    }
+    .cover-images img {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header>
+  <div class="header-container">
+    <h1><a href="../index.html">myeongjin</a></h1>
+    <nav>
+      <a href="index.html">edited</a>
+      <a href="../writings/index.html">writings</a>
+      <a href="../about/index.html">about</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 제목/부제/저자 정보 -->
+  <h1 class="project-title">용감한 고양이 올리비아</h1>
+  <h2 class="project-subtitle"></h2>
+  <h3 class="project-authors">마리안나 코포 지음 / 권이진 옮김</h3>
+
+<!-- 책 표지 -->
+  <section class="cover-images">
+    <img src="../images/011_Erasmus_cover.jpg" alt="에라스무스 평전 앞표지">
+    <img src="../images/011_Erasmus_back.jpg" alt="에라스무스 평전 뒤표지">
+  </section>
+
+  <!-- 출간 정보 -->
+  <p style="text-align:center; font-style:italic; margin-top:20px;">
+    2022.08.26. 출간 / 41쪽 / 255*245mm / 양장 / 유아 그림책
+  </p>
+
+  <!-- 책 소개 -->
+  <section class="book-intro">
+    <!-- 첫 두 문장: 볼드체 + 가운데 정렬 -->
+    <p style="text-align:center; font-weight:bold; margin-bottom:20px;"> 
+      어린이의 도전을 가만히 응원하는 <br>
+      다정하고 따스한 그림책<br>
+    </p>
+
+    <!-- 나머지 책 소개 -->
+    <p>
+      올리비아는 모험가예요. 지칠 줄 모르는 여행가이자, 두려움 없는 탐험가이기도 해요. 아주 귀여운 아니, 용감한 고양이지요. 그런데 올리비아는 집 밖에 한 번도 나가 본 적이 없대요. 꼭 밖에 나가야만 즐거운 건 아니잖아요? 재미있는 장난감도, 올리비아를 아끼는 사람들도 모두 집 안에 있어요. 그리고 바깥세상이 멋지다고들 하지만, 글쎄요, 올리비아가 보기엔 그렇지만도 않아요. 거긴 상상력이 하나도 없는 고양이들에게나 필요한 곳이죠. 그런데 올리비아야, 너 왜 밖에 나와 있니? 올리비아야?<br><br>
+      집콕 고양이 올리비아에게 찾아온 뜻밖의 모험! 우연히 바깥세상에 발을 내디딘 올리비아는 낯선 강아지를 마주한다. 황급히 나무에 올라 피해 보지만 더는 갈 곳이 없다. 살짝 높아 보이는 건물 옥상뿐. 마음을 굳게 먹고 눈을 꼭 감는 올리비아. 무얼 하려는 걸까? 작고 소박한 것을 좋아하는 작가 마리안나 코포가 동글동글 귀여운 그림체로 그려 낸 올리비아의 소소한 모험은 아이들에게 작은 도전과 성취의 기쁨을 안겨 줄 것이다.
+    </p>
+  </section>
+
+  <!-- 성과 부분 -->
+  <section class="book-achievements" style="max-width:800px; margin:40px auto; padding:0 10px;">
+    <hr>
+  </section>
+</main>
+
+<!-- 홈 버튼 -->
+<nav class="home-button">
+  <a href="../index.html">Back to Home</a>
+</nav>
+
+<footer>
+  © 2025 Myeongjin Gwak
+</footer>
+
+</body>
+</html>
