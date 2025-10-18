@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도시를 바꾸는 새 | Myeongjin Gwak</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* ===== 프로젝트 페이지 전용 추가 스타일 ===== */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px; /* 상단 padding = header 높이 */
+  }
 
+  /* ===== 제목/부제/저자 정보 ===== */
+  .project-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .project-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 8px 0 15px 0;
+    line-height: 1.3;
+  }
+
+  .project-authors {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+  }
+
+  /* ===== 표지 이미지 ===== */
+  .cover-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .cover-images img {
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* ===== 책 소개 ===== */
+  .book-intro, .book-achievements {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .book-intro p:first-child {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* ===== 성과 리스트 ===== */
+  .book-achievements ul {
+    padding-left: 20px;
+  }
+
+  .book-achievements li {
+    margin-bottom: 10px;
+  }
+
+  a.article-link {
+    text-decoration: underline;
+    color: #333;
+  }
+
+  a.article-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== 홈 버튼 ===== */
+  nav.home-button {
+    text-align: center;
+    margin: 80px 0 40px 0;
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 800px) {
+    .cover-images img {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main {
+      padding: 120px 10px 20px 10px;
+    }
+    .project-subtitle {
+      font-size: 1em;
+    }
+    .project-authors {
+      font-size: 0.85em;
+    }
+    .cover-images img {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header>
+  <div class="header-container">
+    <h1><a href="../index.html">myeongjin</a></h1>
+    <nav>
+      <a href="index.html">edited</a>
+      <a href="../writings/index.html">writings</a>
+      <a href="../about/index.html">about</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 제목/부제/저자 정보 -->
+  <h1 class="project-title">도시를 바꾸는 새</h1>
+  <h2 class="project-subtitle">새의 선물을 도시에 들이는 법</h2>
+  <h3 class="project-authors">티모시 비틀리 지음 / 김숲 옮김</h3>
+
+  <!-- 책 표지 -->
+  <section class="cover-images">
+    <img src="../images/008_Bird_cover.png" alt="도시를 바꾸는 새 앞표지">
+    <img src="../images/008_Bird_back.jpg" alt="도시를 바꾸는 새 뒤표지">
+  </section>
+
+  <!-- 출간 정보 -->
+  <p style="text-align:center; font-style:italic; margin-top:20px;">
+    2022.01.05. 출간 / 336쪽 / 150*218mm / 무선 / 사회과학, 환경
+  </p>
+
+  <!-- 책 소개 -->
+  <section class="book-intro">
+    <!-- 첫 두 문장: 볼드체 + 가운데 정렬 -->
+    <p style="text-align:center; font-weight:bold; margin-bottom:20px;">
+      “새는 도시를 바라보는 우리의 시선을 점검하도록 하며<br>
+      나아가 도시를 아름답게 변모시키고 삶을 윤택하게 만들어 줍니다.”<br><br>
+      국립생태원 김영준 동물관리연구실장 추천 도서<br>
+    </p>
+
+    <!-- 나머지 책 소개 -->
+    <p>
+      지속 가능한 도시 계획 전문가인 저자 티모시 비틀리는, 새로 말미암아 변화한 도시의 모습과 도시에서 새와 공생하기 위해 힘쓰고 있는 사람들의 이야기를 찾아 이 책으로 엮었다. 새와 사람의 방문이 끊이지 않는 생태 공원으로 재탄생한 런던의 오래된 공업용지와 토론토의 벽돌 공장 이야기, 멸종 위기종인 코뿔새를 보전하기 위해 빌딩 외벽을 수직 정원으로 디자인하도록 한 싱가포르와 유리창 충돌로 생명을 잃는 새를 살리기 위한 건축 가이드라인을 제정한 샌프란시스코와 시카고의 사례 등을 소개한다.<br><br>
+      저자는 “하늘을 나는 우리의 친구들을 위해 일상 공간을 재해석하면 도시는 우리에게도 더 살기 좋은 곳이 될 것”이라며, ‘새를 위한 도시’가 그 출발점이 될 수 있다고 주장한다. 도시를 설계하고 디자인할 때 새를 고려하면 자연이 도시의 핵심이 되고, 새에게 안전한 무늬를 넣은 유리창과 옥상 정원은 건물의 에너지 효율을 높여 기후 위기를 막는 데에도 도움이 되며, 버드피더(새 모이대)를 설치하고 새를 관찰하면 스트레스가 해소되고 심리적 안정감이 든다는 이야기다.<br><br>
+      새는 도시를 더욱 푸르게 하고, 우리의 삶을 한층 더 다채롭게 만들어 준다. 날개 달린 마법 같은 이 생명체에 집중하는 순간, 우리 앞에 닥친 수많은 문제를 새처럼 높은 시야에서 바라보고 새롭게 대응해 나갈 수 있을 것이다. 자연과의 공생을 고민하는 도시생활자에게 이 책을 권한다.<br><br>
+    </p>
+  </section>
+
+  <!-- 성과 부분 -->
+  <section class="book-achievements" style="max-width:800px; margin:40px auto; padding:0 10px;">
+    <hr>
+    <ul>
+      <li>
+        <a href="https://bookapply.kpipa.or.kr/upload/202209/38746.72805113905620220930094639.pdf" target="_blank" class="article-link">
+          2022년 세종도서 교양부문
+        </a>
+      </li>
+      <li>
+        <a href="https://www.keep.go.kr/front/intro/envEduPlcyAndBiz/intro8.html#tab-sub03" target="_blank" class="article-link">
+          2022년 환경부 우수환경도서
+        </a>
+      </li>
+      <li>
+        <a href="https://www.eco.or.kr/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMTA1MzFiZDhiYjhmOTMzMDc2IjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjMwMTE4ZmJiMDIzODkyMDFmNiI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDIzMDExOGE5NTVjN2I1MjJlNGIiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY4ZjM5ODQ2NGJjMTAiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30="_blank" class="article-link">
+          2022년 환경정의 올해의 청소년 환경책
+        </a>
+      </li>
+      <li>
+        <a href="https://www.readread.or.kr/blue-square/read-books-clutter/?mod=document&uid=2491"_blank" class="article-link">
+          2022년 겨울 책따세 추천도서
+        </a>
+      </li>
+      <li>
+        <a href="https://www.readread.or.kr/blue-square/read-books-clutter/?mod=document&uid=2557"_blank" class="article-link">
+          2023년 여름 책따세 추천도서
+        </a>
+      </li>
+      <li>
+        <a href="https://blog.naver.com/khhan21/222764011429" target="_blank" class="article-link">
+          &lt;학교도서관저널&gt; 2022년 6월호 추천도서
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- 홈 버튼 -->
+<nav class="home-button">
+  <a href="../index.html">Back to Home</a>
+</nav>
+
+<footer>
+  © 2025 Myeongjin Gwak
+</footer>
+
+</body>
+</html>
