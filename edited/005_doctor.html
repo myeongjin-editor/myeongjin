@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반항하는 의사들 | Myeongjin Gwak</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* ===== 프로젝트 페이지 전용 추가 스타일 ===== */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px; /* 상단 padding = header 높이 */
+  }
 
+  /* ===== 제목/부제/저자 정보 ===== */
+  .project-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .project-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 8px 0 15px 0;
+    line-height: 1.3;
+  }
+
+  .project-authors {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+  }
+
+  /* ===== 표지 이미지 ===== */
+  .cover-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .cover-images img {
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* ===== 책 소개 ===== */
+  .book-intro, .book-achievements {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .book-intro p:first-child {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* ===== 성과 리스트 ===== */
+  .book-achievements ul {
+    padding-left: 20px;
+  }
+
+  .book-achievements li {
+    margin-bottom: 10px;
+  }
+
+  a.article-link {
+    text-decoration: underline;
+    color: #333;
+  }
+
+  a.article-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== 홈 버튼 ===== */
+  nav.home-button {
+    text-align: center;
+    margin: 80px 0 40px 0;
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 800px) {
+    .cover-images img {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main {
+      padding: 120px 10px 20px 10px;
+    }
+    .project-subtitle {
+      font-size: 1em;
+    }
+    .project-authors {
+      font-size: 0.85em;
+    }
+    .cover-images img {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header>
+  <div class="header-container">
+    <h1><a href="../index.html">myeongjin</a></h1>
+    <nav>
+      <a href="index.html">edited</a>
+      <a href="../writings/index.html">writings</a>
+      <a href="../about/index.html">about</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 제목/부제/저자 정보 -->
+  <h1 class="project-title">반항하는 의사들</h1>
+  <h2 class="project-subtitle">파라켈수스부트 에버렛 쿱까지 세상을 바꾼 12명의 의사 이야기</h2>
+  <h3 class="project-authors">곽경훈 지음</h3>
+
+  <!-- 책 표지 -->
+  <section class="cover-images">
+    <img src="../images/005_doctor_cover.jpg" alt="반항하는 의사들 앞표지">
+    <img src="../images/005_doctor_back.jpg" alt="반항하는 의사들 뒤표지">
+  </section>
+
+  <!-- 출간 정보 -->
+  <p style="text-align:center; font-style:italic; margin-top:20px;">
+    2021.04.22. 출간 / 248쪽 / 140*218mm / 무선 / 역사
+  </p>
+
+  <!-- 책 소개 -->
+  <section class="book-intro">
+    <!-- 첫 두 문장: 볼드체 + 가운데 정렬 -->
+    <p style="text-align:center; font-weight:bold; margin-bottom:20px;">
+      "우리는 히포크라테스의 후예가 아니다"<br><br>
+    </p>
+
+    <!-- 나머지 책 소개 -->
+    <p>
+      문화·예술이 융성하던 르네상스 시기, ‘의학의 아버지’ 히포크라테스의 이론에 반기를 든 사내가 나타났다. 그는 이발소 외과 의사와 산파, 약초꾼을 불러 경험을 나누게 하고 ‘수백 년 전의 케케묵은 책이 아니라 현장에서 답을 찾아야 한다.’라는 내용을 설파하고 다녔다. 당시까지의 의학은 히포크라테스가 주장하고 갈레노스와 이븐 시나가 집대성한 ‘체액설’에 기반했다.<br><br>
+      사내는 이에 반기를 들었다. 직접 관찰한 결과를 토대로 질병을 분류하고 규명하여 환자를 치료하라고 주장했다. 근거 중심주의에 기반한 현대 의학의 씨앗을 뿌린 셈이다. 급기야 1527년 6월 24일, 바젤 대학 정문 앞에서 갈레노스와 이븐 시나의 책을 불태운다. 이 사건으로 의학은 세상 만물을 설명하는 ‘철학’에서 객관적인 근거에 기반하여 질환을 분류하고 치료하는 ‘과학’이 되었다. 따라서 현대 의학의 아버지는 히포크라테스가 아니라 대가들의 서적을 불태운 반항하는 의사, 파라켈수스다.<br><br>
+      혁명의 불꽃을 당긴 이단자 파라켈수스로 시작하여 에이즈 예방을 위해 보수 세력과 맞선 독실한 기독교인 보건총감 에버렛 쿱까지, 의학 발전에 이바지한 12명의 이야기를 엮었다. 그러나 모든 인물이 영웅의 삶을 살았던 것은 아니다. 그들 가운데에는 고결한 영웅도 있지만, 편협한 인간, 끔찍한 국수주의자도 있다. 의학사의 가장 역동적인 순간을 만들어 낸 그들의 흥미진진한 이야기를 만나 보자.<br><br>
+    </p>
+  </section>
+
+  <!-- 성과 부분 -->
+  <section class="book-achievements" style="max-width:800px; margin:40px auto; padding:0 10px;">
+    <hr>
+    <ul>
+      <li>
+        <a href="https://www.newsis.com/view/?id=NISX20210702_0001498931" target="_blank" class="article-link">
+          &lt;뉴시스&gt; [신간]피아노를 치며 생각한 것들
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/p/CZ-ygejpNjc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="article-link">
+          책방 '완벽한날들' 북토크 
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/p/CW7iSLqFvUJ/?igsh=QkJVMk41MWdpYQ%3D%3D" target="_blank" class="article-link">
+          책방 '가가77페이지' 북토크 
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- 홈 버튼 -->
+<nav class="home-button">
+  <a href="../index.html">Back to Home</a>
+</nav>
+
+<footer>
+  © 2025 Myeongjin Gwak
+</footer>
+
+</body>
+</html>
