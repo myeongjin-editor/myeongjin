@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>아이가 눈을 뜨기 전에 | Myeongjin Gwak</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* ===== 프로젝트 페이지 전용 추가 스타일 ===== */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px; /* 상단 padding = header 높이 */
+  }
 
+  /* ===== 제목/부제/저자 정보 ===== */
+  .project-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .project-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 8px 0 15px 0;
+    line-height: 1.3;
+  }
+
+  .project-authors {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+  }
+
+  /* ===== 표지 이미지 ===== */
+  .cover-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .cover-images img {
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* ===== 책 소개 ===== */
+  .book-intro, .book-achievements {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .book-intro p:first-child {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* ===== 성과 리스트 ===== */
+  .book-achievements ul {
+    padding-left: 20px;
+  }
+
+  .book-achievements li {
+    margin-bottom: 10px;
+  }
+
+  a.article-link {
+    text-decoration: underline;
+    color: #333;
+  }
+
+  a.article-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== 홈 버튼 ===== */
+  nav.home-button {
+    text-align: center;
+    margin: 80px 0 40px 0;
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 800px) {
+    .cover-images img {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main {
+      padding: 120px 10px 20px 10px;
+    }
+    .project-subtitle {
+      font-size: 1em;
+    }
+    .project-authors {
+      font-size: 0.85em;
+    }
+    .cover-images img {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header>
+  <div class="header-container">
+    <h1><a href="../index.html">myeongjin</a></h1>
+    <nav>
+      <a href="index.html">edited</a>
+      <a href="../writings/index.html">writings</a>
+      <a href="../about/index.html">about</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 제목/부제/저자 정보 -->
+  <h1 class="project-title">아이가 눈을 뜨기 전에</h1>
+  <h2 class="project-subtitle">엄마의 기쁨과 슬픔</h2>
+  <h3 class="project-authors">리신룬 지음 / 우디 옮김</h3>
+
+  <!-- 책 표지 -->
+  <section class="cover-images">
+    <img src="../images/004_baby_cover.jpg" alt="아이가 눈을 뜨기 전에 앞표지">
+    <img src="../images/004_baby_back.jpg" alt="아이가 눈을 뜨기 전에 뒤표지">
+  </section>
+
+  <!-- 출간 정보 -->
+  <p style="text-align:center; font-style:italic; margin-top:20px;">
+    2021.01.25. 출간 / 328쪽 / 130*198mm / 무선 / 에세이
+  </p>
+
+  <!-- 책 소개 -->
+  <section class="book-intro">
+    <!-- 첫 두 문장: 볼드체 + 가운데 정렬 -->
+    <p style="text-align:center; font-weight:bold; margin-bottom:20px;">
+      2018 타이베이국제도서전 비소설 부문 최우수상 수상작<br>
+      소설가 정아은 추천 도서<br><br>
+      한 생명이 태어나 자라는 이면에 감춰진<br>
+      숱한 모순과 좌절, 자기혐오, 그리고 그 사이에서 새어 나오는<br>
+      한없이 투명한 눈물과 웃음에 관한 이야기<br><br>
+    </p>
+
+    <!-- 나머지 책 소개 -->
+    <p>
+      이 책은 ‘엄마 되기’에 관한 이야기다. 모든 여자가 엄마가 되는 것은 아니지만, 모든 사람에게는 엄마가 있다. 아이가 저절로 생겨난 것이 아니듯 엄마 역시 그냥 되는 것이 아니다. 하지만 여전히 사회는 그 과정에 무지하다. 『아이가 눈을 뜨기 전에』는 타이완의 문학 교수 리신룬의 에세이로, 저자 본인이 두 아이의 엄마가 되는 과정을 세밀하고 사실적으로 묘사하고 있다.<br><br>
+      그 지난하고 고단한 여정은 결혼식 당일 화려하게 차려입은 자신의 낯선 몸을 들여다보는 것으로 시작한다. 이후 임신 중 몸의 경험과 분만 과정에서 몸의 감각을 사실적으로 기록한 1장, 아이를 기르며 벌어지는 일을 마치 단편 영화를 보는 듯 생생하게 그려 낸 2장을 거쳐, 펄펄 끓는 물에 화상을 입어 입원한 아이를 돌본 경험을 절절하게 적어 내려간 3장, 아이를 낳은 뒤 자신의 엄마에 대해 곱씹어 보는 4장까지, 한 여성이 결혼과 임신, 출산, 육아의 여정을 거치며 경험한 몸의 감각은 물론 변화무쌍한 감정까지 오롯이 담아냈다.<br><br>
+      단언하기 힘든 그 혼란스러운 현실과 이런 현실을 살아가는 이의 복잡미묘한 감정을 충실히 담아낸 이 작품은 아이로 인해 울고 웃어 본 이들에게는 통점을 살살 어루만져 주는 위로를, 작가와 다른 삶을 사는 사람들에게는 공감의 지평이 확장되는 기회를 선사할 것이다. <br><br>
+    </p>
+  </section>
+
+  <!-- 성과 부분 -->
+  <section class="book-achievements" style="max-width:800px; margin:40px auto; padding:0 10px;">
+    <hr>
+    <ul>
+      <li>
+        <a href="https://www.womennews.co.kr/news/articleView.html?idxno=207604"_blank" class="article-link">
+          &lt;여성신문&gt; 엄마 되기의 기쁨과 슬픔
+        </a>
+      </li>
+      <li>
+        <a href="https://www.kmib.co.kr/article/view.asp?arcid=0924177013&code=13150000&cp=nv"_blank" class="article-link">
+          &lt;국민일보&gt; 출산·육아과정 생생한 엄마의 기록
+        </a>
+      </li>
+      <li>
+        <a href="https://www.readersnews.com/news/articleView.html?idxno=102489"_blank" class="article-link">
+          &lt;독서신문&gt; [책 속 명문장] 한없이 투명한 눈물과 웃음에 관한 이야기 『아이가 눈을 뜨기 전에』
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- 홈 버튼 -->
+<nav class="home-button">
+  <a href="../index.html">Back to Home</a>
+</nav>
+
+<footer>
+  © 2025 Myeongjin Gwak
+</footer>
+
+</body>
+</html>
