@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>writings | Myeongjin Gwak</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* ===== writings 메인 페이지 전용 스타일 ===== */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px 40px 20px; /* 상단 패딩 = 헤더 높이 */
+  }
 
+  .page-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  /* ===== 게시판 스타일 ===== */
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .post-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+  }
+
+  .post-list li:hover {
+    background: #fafafa;
+  }
+
+  .post-title {
+    font-size: 1.05em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #222;
+  }
+
+  .post-title:hover {
+    text-decoration: underline;
+  }
+
+  .post-date {
+    font-size: 0.9em;
+    color: #777;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 600px) {
+    main {
+      padding: 120px 10px 20px 10px;
+    }
+    .page-title {
+      font-size: 1.4em;
+      margin-bottom: 40px;
+    }
+    .post-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .post-date {
+      margin: 5px 0 0 0;
+      font-size: 0.85em;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ===== 헤더 ===== -->
+<header>
+  <div class="header-container">
+    <h1><a href="../index.html">myeongjin</a></h1>
+    <nav>
+      <a href="../edited/index.html">edited</a>
+      <a href="index.html" class="active">writings</a>
+      <a href="../about/index.html">about</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 메인 ===== -->
+<main>
+  <h1 class="page-title">writings</h1>
+
+  <ul class="post-list">
+    <li>
+      <a href="001_example.html" class="post-title">문학과 시간에 대한 단상</a>
+      <span class="post-date">2025.10.18</span>
+    </li>
+    <li>
+      <a href="002_example.html" class="post-title">도시와 고독에 대하여</a>
+      <span class="post-date">2025.09.22</span>
+    </li>
+    <li>
+      <a href="003_example.html" class="post-title">걷기라는 사유의 방식</a>
+      <span class="post-date">2025.08.30</span>
+    </li>
+  </ul>
+</main>
+
+<!-- ===== 푸터 ===== -->
+<footer>
+  © 2025 Myeongjin Gwak
+</footer>
+
+</body>
+</html>
