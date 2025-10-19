@@ -5,7 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Myeongjin Gwak | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== writings 리스트 스타일 ===== */
+    .writing-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 800px;
+      border-top: 1px solid #ddd;
+    }
+
+    .writing-list li {
+      border-bottom: 1px solid #eee;
+      padding: 18px 10px;
+      transition: background-color 0.2s;
+    }
+
+    .writing-list li:hover {
+      background-color: #fafafa;
+    }
+
+    .writing-list a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      font-size: 1.1em;
+    }
+
+    .writing-list a:hover {
+      text-decoration: underline;
+    }
+
+    .writing-date {
+      font-size: 0.85em;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 500px) {
+      .writing-list li {
+        padding: 15px 6px;
+      }
+      .writing-list a {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- 헤더 -->
@@ -21,6 +68,7 @@
   </header>
 
   <main>
+    <!-- ===== edited 섹션 ===== -->
     <section id="edited">
       <h2>edited</h2>
       <div class="card-grid">
@@ -30,18 +78,28 @@
       </div>
     </section>
 
+    <!-- ===== writings 섹션 ===== -->
     <section id="writings">
       <h2>writings</h2>
-      <div class="card-grid">
-        <div style="width:200px; text-align:center; color:#aaa;">coming soon</div>
-        <div style="width:200px; text-align:center; color:#aaa;">coming soon</div>
-        <div style="width:200px; text-align:center; color:#aaa;">coming soon</div>
-      </div>
+      <ul class="writing-list">
+        <li>
+          <a href="writings/post1.html">시간의 틈에 피어나는 이야기</a>
+          <div class="writing-date">2025.10.18</div>
+        </li>
+        <li>
+          <a href="writings/post2.html">조용한 오후의 생각들</a>
+          <div class="writing-date">2025.09.27</div>
+        </li>
+        <li>
+          <a href="writings/post3.html">불완전함의 미학</a>
+          <div class="writing-date">2025.08.12</div>
+        </li>
+      </ul>
     </section>
   </main>
 
-<footer>
-  © 2025 Myeongjin Gwak
-</footer>
+  <footer>
+    © 2025 Myeongjin Gwak
+  </footer>
 </body>
 </html>
