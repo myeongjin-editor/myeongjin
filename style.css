@@ -9,6 +9,7 @@ body {
   overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
+
 /* =========================
    헤더 (고정 + 양끝 정렬)
 ========================= */
@@ -186,4 +187,44 @@ footer {
   .card-grid img, .project-card img {
     width: 90vw; /* 한 줄에 1개 */
   }
+}
+/* ===== 메인 색상 지정 ===== */
+:root {
+  --main-color: #1d00ff; /* 원하는 색상 코드로 변경 가능 */
+}
+
+/* ===== 헤더 아래 라인 ===== */
+header {
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* ===== 메뉴 링크 ===== */
+header nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: var(--main-color);
+}
+
+/* ===== 게시판 링크 (writings 등) ===== */
+.board-table a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.board-table a:hover {
+  color: var(--main-color);
+}
+
+/* ===== 구분선 (섹션 아래 라인 등) ===== */
+section hr {
+  border: 0;
+  border-top: 1px solid var(--main-color);
+  opacity: 0.3;
+  margin: 20px 0;
 }
