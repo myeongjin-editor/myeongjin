@@ -6,7 +6,7 @@
   <title>Myeongjin Gwak | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ===== writings 리스트 스타일 ===== */
+    /* ===== writings 리스트 스타일 (게시판 형식) ===== */
     .writing-list {
       list-style: none;
       padding: 0;
@@ -16,6 +16,9 @@
     }
 
     .writing-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       border-bottom: 1px solid #eee;
       padding: 18px 10px;
       transition: background-color 0.2s;
@@ -25,11 +28,15 @@
       background-color: #fafafa;
     }
 
+    .writing-title {
+      flex: 1;
+      text-align: left;
+    }
+
     .writing-list a {
       text-decoration: none;
       color: #000;
-      display: block;
-      font-size: 1.1em;
+      font-size: 1.05em;
     }
 
     .writing-list a:hover {
@@ -37,17 +44,22 @@
     }
 
     .writing-date {
-      font-size: 0.85em;
+      font-size: 0.9em;
       color: #888;
-      margin-top: 4px;
+      white-space: nowrap;
+      margin-left: 15px;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       .writing-list li {
-        padding: 15px 6px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 15px 8px;
       }
-      .writing-list a {
-        font-size: 1em;
+      .writing-date {
+        margin-left: 0;
+        font-size: 0.85em;
       }
     }
   </style>
@@ -83,15 +95,15 @@
       <h2>writings</h2>
       <ul class="writing-list">
         <li>
-          <a href="writings/post1.html">시간의 틈에 피어나는 이야기</a>
+          <div class="writing-title"><a href="writings/post1.html">시간의 틈에 피어나는 이야기</a></div>
           <div class="writing-date">2025.10.18</div>
         </li>
         <li>
-          <a href="writings/post2.html">조용한 오후의 생각들</a>
+          <div class="writing-title"><a href="writings/post2.html">조용한 오후의 생각들</a></div>
           <div class="writing-date">2025.09.27</div>
         </li>
         <li>
-          <a href="writings/post3.html">불완전함의 미학</a>
+          <div class="writing-title"><a href="writings/post3.html">불완전함의 미학</a></div>
           <div class="writing-date">2025.08.12</div>
         </li>
       </ul>
