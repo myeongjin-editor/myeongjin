@@ -130,7 +130,7 @@ body#index section h2 {
 }
 
 .card-grid img {
-  width: 50px;
+  width: 280px;
   height: auto;
   border: 1px solid #eee;
 }
@@ -145,7 +145,7 @@ body#index section h2 {
 }
 
 .project-card img {
-  width: 280px;
+  width: 100px;
   height: auto;
   border: 1px solid #eee;
   display: block;
