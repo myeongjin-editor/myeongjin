@@ -75,11 +75,18 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* ✅ 활성화된 메뉴 */
+/* ✅ 활성화된 메뉴 (볼드체 유지) */
 header nav a.active {
   font-weight: bold;   /* 볼드체로 표시 */
   color: #333;         /* 색상 유지 */
 }
+
+/* ✅ 클릭 순간에도 투명해지지 않도록 고정 */
+header nav a:active {
+  color: #333 !important;
+  opacity: 1 !important;
+}
+
 
 /* =========================
    메인 영역
@@ -102,6 +109,12 @@ section h2 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 6px;
 }
+
+/* ✅ index 전용 - edited, writings 제목 밑 선 제거 */
+body#index section h2 {
+  border-bottom: none;
+}
+
 
 /* 카드 그리드 (index 페이지) */
 .card-grid {
@@ -154,6 +167,7 @@ footer {
   box-sizing: border-box;
 }
 
+
 /* =========================
    반응형 헤더 (모바일 600px 이하)
 ========================= */
@@ -179,6 +193,7 @@ footer {
   }
 }
 
+
 /* =========================
    반응형 카드/프로젝트
 ========================= */
@@ -202,6 +217,7 @@ footer {
     width: 90vw; /* 한 줄에 1개 */
   }
 }
+
 
 /* =========================
    메인 색상 및 공통 스타일
