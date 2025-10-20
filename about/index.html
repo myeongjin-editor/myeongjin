@@ -1,65 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Myeongjin Gwak | About</title>
+  <title>about | Myeongjin Gwak</title>
   <link rel="stylesheet" href="../style.css">
+
   <style>
-    /* ===== writings 리스트 스타일 (게시판 형식) ===== */
-    .writing-list {
-      list-style: none;
-      padding: 0;
+    /* ===== about 전용 스타일 ===== */
+    main {
+      max-width: 900px;
       margin: 0 auto;
-      max-width: 800px;
-      border-top: 1px solid #ddd;
+      padding: 100px 20px 40px 20px; /* writings와 동일한 여백 */
+      box-sizing: border-box;
+      line-height: 1.7;
     }
 
-    .writing-list li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #eee;
-      padding: 18px 10px;
-      transition: background-color 0.2s;
+    main h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+      border-bottom: 2px solid var(--main-color, #222);
+      padding-bottom: 8px;
+      margin-bottom: 30px;
     }
 
-    .writing-list li:hover {
-      background-color: #fafafa;
-    }
-
-    .writing-title {
-      flex: 1;
-      text-align: left;
-    }
-
-    .writing-list a {
-      text-decoration: none;
-      color: #000;
-      font-size: 1.05em;
-    }
-
-    .writing-list a:hover {
-      text-decoration: underline;
-    }
-
-    .writing-date {
-      font-size: 0.9em;
-      color: #888;
-      white-space: nowrap;
-      margin-left: 15px;
+    main p {
+      font-size: 1em;
+      color: #333;
+      margin-bottom: 14px;
     }
 
     @media (max-width: 600px) {
-      .writing-list li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-        padding: 15px 8px;
+      main {
+        padding: 120px 10px 20px 10px;
       }
-      .writing-date {
-        margin-left: 0;
-        font-size: 0.85em;
+      main h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      main p {
+        font-size: 0.95em;
       }
     }
   </style>
@@ -67,29 +47,32 @@
 
 <body>
 
-  <!-- 헤더 -->
+  <!-- ===== 헤더 ===== -->
   <header>
     <div class="header-container">
       <h1><a href="../index.html">myeongjin</a></h1>
       <nav>
         <a href="../edited/index.html">edited</a>
         <a href="../writings/index.html">writings</a>
-        <a href="index.html" class="active">about</a> <!-- ✅ 현재 탭 표시 -->
+        <a href="index.html" class="active">about</a>
       </nav>
     </div>
   </header>
 
-  <!-- 메인 -->
+  <!-- ===== 메인 ===== -->
   <main>
-    <section>
-      <h2>About</h2>
-      <p>재밌어 보이면 합니다. 이 페이지도 그렇게 만들었습니다.</p>
-      <p>@kkuaak</p>
-      <p>✉️ gwakkamoly@gmail.com<br>📍 Seoul, South Korea</p>
-    </section>
+    <h2>About</h2>
+    <p>재밌어 보이면 합니다. 이 페이지도 그렇게 만들었습니다.</p>
+    <p>@kkuaak</p>
+    <p>
+      <a href="https://www.instagram.com/kkuaak/" target="_blank" rel="noopener noreferrer">
+      @kkuaak
+      </a>
+    </p>
+    <p>✉️ gwakkamoly@gmail.com<br>📍 Seoul, South Korea</p>
   </main>
 
-  <!-- 푸터 -->
+  <!-- ===== 푸터 ===== -->
   <footer>
     © 2025 Myeongjin Gwak
   </footer>
