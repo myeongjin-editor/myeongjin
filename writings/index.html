@@ -10,27 +10,35 @@
   main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 100px 20px 40px 20px; /* 상단 패딩 = 헤더 높이 */
+    padding: 100px 20px 40px 20px;
   }
 
-  .page-title {
-    text-align: center;
-    font-size: 1.8em;
+  /* ===== 게시판 헤더 (제목 / 날짜) ===== */
+  .board-header {
+    display: flex;
+    justify-content: space-between;
     font-weight: 600;
-    margin-bottom: 60px;
+    border-top: 2px solid var(--main-color, #222);
+    border-bottom: 1px solid #ddd;
+    padding: 10px 10px;
+    margin-bottom: 0;
   }
 
-  /* ===== 게시판 스타일 ===== */
+  .board-header span {
+    font-size: 0.95em;
+    color: #444;
+  }
+
+  /* ===== 게시판 리스트 ===== */
   .post-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    border-top: 1px solid #ddd;
   }
 
   .post-list li {
     border-bottom: 1px solid #ddd;
-    padding: 20px 10px;
+    padding: 12px 10px; /* 간격 좁힘 */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,14 +50,14 @@
   }
 
   .post-title {
-    font-size: 1.05em;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
     color: #222;
   }
 
   .post-title:hover {
-    text-decoration: underline;
+    color: var(--main-color, #1d00ff);
   }
 
   .post-date {
@@ -64,13 +72,13 @@
     main {
       padding: 120px 10px 20px 10px;
     }
-    .page-title {
-      font-size: 1.4em;
-      margin-bottom: 40px;
+    .board-header {
+      display: none; /* 모바일에서는 제목/날짜 헤더 감춤 */
     }
     .post-list li {
       flex-direction: column;
       align-items: flex-start;
+      padding: 14px 8px;
     }
     .post-date {
       margin: 5px 0 0 0;
@@ -96,15 +104,18 @@
 
 <!-- ===== 메인 ===== -->
 <main>
-  <h1 class="page-title">writings</h1>
+  <div class="board-header">
+    <span>제목</span>
+    <span>날짜</span>
+  </div>
 
   <ul class="post-list">
     <li>
-      <a href="002_Reims.html" class="post-title">[독후감]서울로 되떠나오며 느낀 것들—《랭스로 되돌아가다》를 읽고</a>
+      <a href="002_Reims.html" class="post-title">[독후감] 서울로 되떠나오며 느낀 것들 — 《랭스로 되돌아가다》를 읽고</a>
       <span class="post-date">2025.10.08</span>
     </li>
     <li>
-      <a href="001_poor.html" class="post-title">[독후감]일인칭 가난</a>
+      <a href="001_poor.html" class="post-title">[독후감] 일인칭 가난</a>
       <span class="post-date">2023.12.31</span>
     </li>
     <li>
