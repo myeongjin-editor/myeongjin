@@ -199,7 +199,7 @@ footer {
 ========================= */
 @media (max-width: 800px) {
   .card-grid img, .project-card img {
-    width: 20vw; /* 한 줄에 2개 정도 */
+    width: 150vw; /* 한 줄에 2개 정도 */
   }
 }
 
