@@ -20,8 +20,9 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid var(--main-color);
   padding: 10px 20px;
+  box-sizing: border-box; /* ✅ 오른쪽 잘림 방지 */
 }
 
 .header-container {
@@ -31,6 +32,8 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box; /* ✅ 오른쪽 끝 여유 확보 */
 }
 
 /* 타이틀 */
@@ -63,10 +66,19 @@ header nav a {
   font-size: 1em;
   padding: 8px;
   white-space: nowrap; /* 줄바꿈 방지 */
+  font-weight: normal;
+  transition: color 0.3s, font-weight 0.3s;
 }
 
+/* 마우스 오버 */
 header nav a:hover {
   text-decoration: underline;
+}
+
+/* ✅ 활성화된 메뉴 */
+header nav a.active {
+  font-weight: bold;   /* 볼드체로 표시 */
+  color: #333;         /* 색상 유지 */
 }
 
 /* =========================
@@ -76,6 +88,7 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 100px 20px 20px 20px; /* 상단 padding = header 높이 */
+  box-sizing: border-box;
 }
 
 /* 섹션 */
@@ -138,6 +151,7 @@ footer {
   border-top: 1px solid #eee;
   margin-top: 60px;
   color: #666;
+  box-sizing: border-box;
 }
 
 /* =========================
@@ -188,29 +202,15 @@ footer {
     width: 90vw; /* 한 줄에 1개 */
   }
 }
-/* ===== 메인 색상 지정 ===== */
+
+/* =========================
+   메인 색상 및 공통 스타일
+========================= */
 :root {
-  --main-color: #00ff0000; /* 원하는 색상 코드로 변경 가능 */
+  --main-color: #3858ff; /* 원하는 메인 색상으로 변경 가능 */
 }
 
-/* ===== 헤더 아래 라인 ===== */
-header {
-  border-bottom: 2px solid var(--main-color);
-}
-
-/* ===== 메뉴 링크 ===== */
-header nav a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-header nav a:hover,
-header nav a.active {
-  color: var(--main-color);
-}
-
-/* ===== 게시판 링크 (writings 등) ===== */
+/* ===== 게시판 링크 ===== */
 .board-table a {
   color: #333;
   text-decoration: none;
@@ -221,7 +221,7 @@ header nav a.active {
   color: var(--main-color);
 }
 
-/* ===== 구분선 (섹션 아래 라인 등) ===== */
+/* ===== 구분선 ===== */
 section hr {
   border: 0;
   border-top: 1px solid var(--main-color);
