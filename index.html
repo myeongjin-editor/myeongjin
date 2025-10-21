@@ -6,12 +6,18 @@
   <title>Myeongjin Gwak | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ===== writings 리스트 스타일 (게시판 형식) ===== */
+    /* ===== 공통 폭 통일 (edited & writings) ===== */
+    .card-grid,
+    .writing-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ===== writings 리스트 스타일 ===== */
     .writing-list {
       list-style: none;
       padding: 0;
       margin: 0 auto;
-      max-width: 800px;
       border-top: 1px solid #ddd;
     }
 
@@ -20,7 +26,7 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #eee;
-      padding: 18px 10px;
+      padding: 12px 6px; /* 🔹 줄여서 높이 축소 */
       transition: background-color 0.2s;
     }
 
@@ -54,9 +60,10 @@
       .writing-list li {
         flex-direction: column;
         align-items: flex-start;
-        gap: 4px;
-        padding: 15px 8px;
+        gap: 3px;
+        padding: 10px 6px;
       }
+
       .writing-date {
         margin-left: 0;
         font-size: 0.85em;
@@ -87,6 +94,7 @@
         <a href="edited/016_NJ.html"><img src="images/016_NJ_cover.jpg" alt=""></a>
         <a href="edited/015_Alle_Zeit.html"><img src="images/015_Alle_Zeit_cover.jpg" alt=""></a>
         <a href="edited/008_Bird.html"><img src="images/008_Bird_cover.jpg" alt=""></a>
+        <a href="edited/006_piano.html"><img src="images/006_piano_cover.jpg" alt=""></a>
       </div>
     </section>
 
@@ -97,6 +105,18 @@
         <li>
           <div class="writing-title"><a href="writings/251008_Reims.html">[독후감] 서울로 되떠나오며 느낀 것들 — 《랭스로 되돌아가다》를 읽고</a></div>
           <div class="writing-date">2025.10.08.</div>
+        </li>
+        <li>
+          <div class="writing-title"><a href="writings/250810_Lisbon.html">[독후감] 리스본행 야간열차</a></div>
+          <div class="writing-date">2025.08.10.</div>
+        </li>
+        <li>
+          <div class="writing-title"><a href="writings/250608_beast.html">[독후감] 짐승일기</a></div>
+          <div class="writing-date">2025.06.08.</div>
+        </li>
+        <li>
+          <div class="writing-title"><a href="writings/240218_beast.html">[독후감] 새벽과 음악</a></div>
+          <div class="writing-date">2024.02.18.</div>
         </li>
         <li>
           <div class="writing-title"><a href="writings/231231_poor.html">[독후감] 일인칭 가난</a></div>
